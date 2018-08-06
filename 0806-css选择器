@@ -1,0 +1,51 @@
+html4其它技术:
+	列表:
+		有标记列表:无序列表 ul li
+			   有序列表 ol li
+		无标记列表 dl dt dd
+			dl 主标题
+
+			dt子标题
+			dl dt 无缩进的关系
+			dd内容
+			dd有缩进的关系
+		布局时常用的ul, 做样式方便 可以用dl dt ，dl dt少用
+	框架:
+		frameset框架集
+		与frame合用,解决一个：局部刷新的问题
+
+		前端:2014左右 div+css
+		table布局<iframe src="网页" name="">
+css
+	网页三大技术: html css js 
+	w3c标准:三要素： 结构      表现      行为
+			html      css        js
+                  html作用：告诉网页哪里放图片，哪里放文字
+		  css作用：美化网页，文字大小，文字字体，文字颜色
+		  js作用：动效
+	css:层叠样式表
+		p{ font-family:'宋体'}标签选择器：把html里面标签拿出来，定义css样式
+		.p{font-family:'宋体'}类别选择器：把html里面的标签加上一个类别class，用.来定义css的样式
+		引用<p class="p"></p>
+		#p{font-family:'宋体'}id选择器，把html里面的标签定义一个id,在css声明中用#来定义,引用：
+		<p id="p"></p>
+		类别选择器  id选择器
+		class选择器可以多个选择器复用
+		id选择器只能一个使用
+		标签选择器  类别选择器   id选择器三个选择器共用，出现也同样的css语句，id选择器老大,class选择器老二
+		全局选择器：*{}所有的选择器都是语句中定义的属性
+		伪类选择器: l-v-h-a		
+			a:hover鼠标经过时候的状态
+			a:visited鼠标访问过后的状态
+			a:link鼠标未点击的状态
+			a:active鼠标点击时的状态
+		关于字体的css字体相关属性: font-family:字体
+				  font-size:30px;字号
+				  color:white;颜色
+				  font-weight:bold;加粗
+				  font-style:italic;倾斜
+				  text-decoration:underline;下划线
+				  text-align:center;文字水平居中
+			
+		
+
