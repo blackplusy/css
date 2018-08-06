@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf8'>
+		<title>样式表</title>
+		<style>
+			*{
+				font-style:italic;
+				font-weight:bold;
+			}
+			a{
+				/*text-decoration:underline;可以用下划线*/
+				text-decoration:none;
+			}
+			a:link{
+				color:#ff0;
+			}
+			a:visited{
+				color:#f00;
+			}
+			a:hover{
+				color:#00f;
+			}
+			a:active{
+				color:#0f0;
+			}
+	
+			p{
+				color:blue;
+			}
+			.p{
+
+				font-family:'宋体';
+				font-size:50px;
+			}
+			.c{
+				color:purple;
+			}
+			#p{
+				font-family:'宋体';
+				font-size:30px;
+			}
+			#c{
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p c">这是一个网页</p>
+		<p class="c">这是<a href="#">另一行</a></p>
+	</body>
+</html>
