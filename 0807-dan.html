@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>砸蛋蛋</title>
+		<style>
+			body{
+				background:#000;
+			}
+			td{
+				width:200px;
+				height:151px;
+				background:url(jindan.gif);
+			}
+			.x1{
+				background:url(kongdan.gif);
+			}
+			.x2{
+				background:url('jinhua.gif');
+			}
+			#x1{
+				background:url(kongdan.gif);
+			}
+			#x2{
+				background:url(jinhua.gif);
+			}
+		</style>
+		<script>
+			/*	alert(3+4>7?1+2:3+4);*/
+			list=['x1','x2','x1','x2','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1'];
+			bool=[false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false];
+			/*s=0;*/
+			/*
+				_this表示是当前点击的对象
+				key当前点击对象在bool数组是第几号
+			*/
+			function ab(_this,key){
+				
+				/*s+=1;*/
+				k=Math.floor(Math.random()*list.length);
+				/*if (s==1){*/
+				/*if (!bool[key]){*/
+					_this.className=list[k];
+					list.splice(k,1);
+				/*}*/
+				/*}else{
+					s=3;
+				}*/
+				bool[key]=true;
+			}
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td onclick="this.className='x1'">
+				</td>
+				<td onclick="this.className='x2'">
+				</td>
+				<td onclick="this.id='x1'">
+				</td>
+				<td onclick="this.id='x2'">
+				</td>
+			</tr>
+			<tr>
+				<td onclick="s+=1;s==1?this.className='x'+Math.floor(Math.random()*2+1):s=3">
+				</td>
+				<td onclick="ab(this,5)">
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+				<td>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
