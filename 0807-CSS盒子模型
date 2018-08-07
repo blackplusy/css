@@ -69,6 +69,33 @@ CSS部分
 			border-color：边框颜色 
 			border-radius:5px;圆角
 			如果圆角的大小是元素高度的一半，就是圆，正圆必须宽高一致
-
-
+			border画三角形:
+			html增加表征盒子的标签 div
+			要点： 1、盒子无高无宽
+			       2、border有width，宽度，边框宽，三角大
+			       3、border-style:solid;
+			       4、上三角,下边框颜色，左、右、上均无色   transparent(无色）
+			边框: border:1px solid red;红色的1px的实线框
+			      border:三个属性无顺序 
+		背景:
 			
+			background:
+			分写:
+			background-color：背景颜色
+			background-image:背景图像
+			background-repeat:背景重复  no-repeat不重复  repeat-x 横向重复 repeat-y 纵向重复 repeat重复
+			background-position:指定背景所有位置，px，百分比也可以
+			background-position:50% 50%;背景图像居中
+			h5新增:background-size:背景尺寸: 对背景进行了拉伸
+		盒子div没有大小，必须指定width,height
+		
+			background:颜色 图像  重复不重复 背景图像的位置;
+			background:black url(jindan.gif) no-repeat 50% 50%;
+		前端优化其中一点：小图都放在一张大图上，减小http请求
+		div 块状元素：独占一行, h1-h6 p li dl dt dd
+		    行内元素:不能独立一行,跟其它元素和谐相处于一行,img a (span不换行p换行)\
+		如果想把块状元素放在一行，用一个技术：浮动 float:left向左浮动，right向右浮动
+		
+		
+		
+	
