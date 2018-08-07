@@ -1,0 +1,74 @@
+CSS部分
+	w3c标准:  结构  表现  行为  html+css+js
+	css基本结构:
+		选择器 {
+			属性:值
+		}
+		1、css里面属性和值是冒号,每一句;
+		2、值,一个加font-family:'',其它都不用加引号
+	选择器 3种基本选择器  标签  class(类)   id
+		类选择器,用.定义（声明) .p{}   引用 class=
+		id选择器,用#定义(声明)  #p{}   引用 id=
+		区别：单独使用，没有区别
+		      复合使用,id无效果，class叠加,属性相同，后面的语句把前面语句覆盖
+		id>class>标签>全局
+		伪类选择器  :link链接  :visited访问后 :hover鼠标经过  active:鼠标点击时
+		字体的属性：
+			font-family字体
+			font-size字号
+			color颜色
+			font-style:italic倾斜
+			font-weight:bold加粗
+			text-decoration:underline下划线(none)取消下划线
+			text-align:center字体水平居中
+		background:颜色
+		background:url(图片路径)
+	网页<style>主要接收css样式
+	<script>接收js 弹出信息框alert  
+			alert(1/0)出现结果“无穷大"  0.1+0.2>0.3  0.3-0.2<0.1
+			三元运算符（冒号运算符):3+4>7?1+2:3+4=7		条件?语句1:语句2
+			先看条件是否成立，成立就是冒号前面的语句1,不成立就是冒号后面的语句2	
+			js随机 Math.random()产生0-1之间的随机小数,可以等于0，永远不等于1
+			Math.floor()向下截取 Math.ceil()向上截取 Math.round()四舍五入
+			Math.floor(Math.random()*10)=产生0---9之间
+			产生1-9之间  Math.floor(Math.random()*9+1)
+			产生几到几的随机整数
+				   公式：  Math.floor(Math.random()*(大数-小数+1)+1)
+			js里面所有的基本数据类型都可以用+号连接，不用转换
+			把16个奖项放到数组里:	
+				['x1','x2','x1','x2','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1','x1']
+			数组长度length
+			数组删除 splice(脚标，几个) splice(i,1)第i个位置删除1个
+			函数用function定义,函数可以传参，编程传参通常情况下传下标或者当前点击的对象
+	css盒子模型:
+		流行布局:DIV+CSS
+		把网页上所有的元素看成一个盒子,
+		盒子有一个边距： 外边距：本身的盒子距其它盒子的距离
+				内边距：本身盒子给自身的元素留出的距离
+				边框 :盒子本身的边框线
+				内容：盒子里面的东西
+		外边距 内边距 边框 内容合称盒子模型四要素
+		外边距 margin
+		内边距 padding
+		边框 ：border
+		内容: content
+		margin pading参数4个 从上面开始，顺时针方向赋值,   上   右   下  左
+			margin 10px 20px 30px 40px;上10px 右20px  下30px  左 40px
+			margin 10px 20px 30px;3个参数 上10px 左右各20px 下 30px;
+			margin 10px 20px;2个参数，上下10px 左右20px;
+			分开写:上 top  下 bottom 左 left 右 right
+			margin-top:20px;上边距为20;margin与方位用-号连结
+		padding参数同margin一样，
+		border: 描述边框有3个属性:
+			border-style边框样式:实线，双线，虚线
+					solid实线
+					double双线
+					dotted点线
+					dashed虚线
+			border-width:边框粗细 px
+			border-color：边框颜色 
+			border-radius:5px;圆角
+			如果圆角的大小是元素高度的一半，就是圆，正圆必须宽高一致
+
+
+			
