@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>三国杀</title>
+		<style>
+			ul{
+				padding-left:0px;
+				list-style:none;
+				margin-top:10px;
+			}
+			#bg{
+				width:819px;
+				height:604px;
+				background:url(image/bgfight01.jpg) no-repeat;
+				background-size:100% 100%;
+			}
+			#bg .hero{
+				position:relative;
+				width:20%;
+				height:177px;	
+				background:url(jiang/jdaqiao_1200.jpg);
+				background-size:100%;
+				float:left;
+			}
+			#bg .hero1{
+				background-image:url(jiang/jhuanggai_1200.jpg);
+			}
+			#bg .hero2{
+				background-image:url(jiang/jhuangyueying_1200.jpg);
+			}
+			#bg .hero3{
+				background-image:url(jiang/jguojia_1200.jpg);
+			}
+			#bg .hero4{
+				background-image:url(jiang/jxiaoqiao_1200.jpg);
+			}
+			#bg .hero5{
+				background-image:url(jiang/jhuatuo_1200.jpg);
+			}
+			#bg .hero6{
+				background-image:url(jiang/jcaocao_1200.jpg);
+			}
+				
+			#bg .hero img{
+				width:100%;
+			}
+			#bg .hero #property{
+				position:absolute;
+				top:0px;
+				right:0px;
+				width:20%;
+			}
+			#bg .hero #property #identify  img{
+				width:100%;
+			}
+			#bg .hero #property #hp ul{
+				margin:0 auto;
+				width:20px;
+			}
+			#bg .hero #property #hp img{
+				width:20px;
+			}
+			#bg .hero #property #cards p{
+				margin:23px auto 0;
+				width:15px;
+				text-align:center;
+			}
+			.hidden{
+				/*display:none;*/
+				visibility:hidden;
+			}
+			#bottom{
+				width:98%;
+				height:140px;
+				clear:both;
+				position:relative;
+				top:96px;
+			}
+			#bottom #weapons{
+				width:20%;
+				height:140px;
+				float:left;
+			}
+			#bottom #mycard{
+				width:60%;
+				height:140px;
+				float:left;
+				position:relative;
+			}
+			#bottom #mycard .pai{
+				width:98px;
+				height:138px;
+				background:url(card/ktao.png);
+				position:absolute;
+			}
+			#bottom #mycard .one{
+				left:40px;
+			}
+			#bottom #mycard .two{
+				left:80px;
+			}
+			#bottom #mycard .third{
+				left:120px;
+			}
+			#bottom #mycard .pai p{
+				padding-top:5px;
+				margin-top:0px;
+				width:30px;
+				text-align:center;
+				margin-bottom:0px;
+			}
+			#bottom #mycard .pai .huase_k{
+				width:30px;
+			}
+			#bottom #mycard .pai .huase{
+				width:15px;
+				display:block;
+				margin:0 auto;
+				
+			}
+			#bottom #myhero{
+				width:20%;
+				height:140px;
+				background:url(jiang/jhuatuo_1200.jpg);
+				background-size:100%;
+				float:left;
+				position:relative;
+			}
+			#bottom #myhero #master{
+				margin-left:-15px;
+				margin-top:-12px;
+				width:120%;
+			}
+			#bottom #myhero .jineng{
+				width:48px;
+				height:59px;
+				background:url(image/vjineng.png);
+				background-size:100% 100%;	
+				position:absolute;
+				left:20px;
+				bottom:10px;
+			}
+			#bottom #myhero .jineng p{
+				width:17px;
+				margin:3px auto 0;
+				color:red;
+			}
+			#bottom #myhero .er{
+				left:73px;
+			}
+			#bottom #myhero  #property{
+                                position:absolute;
+                                top:0px;
+                                right:0px;
+                                width:20%;
+                        }
+
+			 #bottom #myhero  #property #identify  img{
+                                width:100%;
+                        }
+                        #bottom #myhero #property #hp ul{
+                                margin:0 auto;
+                                width:20px;
+                        }
+                        #bottom #myhero #property #hp img{
+                                width:20px;
+                        }
+
+		</style>
+	</head>
+	<body>
+		<div id="bg">
+			<div class="hero">
+				<img src="image/vaiqu.png"/>
+				<div id="property">
+					<div id="identify">
+						<img src="image/vwei.png"/>
+					</div>
+					<div id="hp">
+						<ul>
+							<li><img src="image/vtili.png"/></li>
+							<li><img src="image/vtili.png"/></li>
+							<li><img src="image/vtili.png"/></li>
+						</ul>
+						
+					</div>
+					<div id="cards">
+						<p>4</p>
+					</div>
+				</div>
+			</div>
+			<div class="hero hero1">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hero2">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hero3">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hero4">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hero5">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hidden">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hidden">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div class="hero hidden">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			
+			<div class="hero hero6">
+                                <img src="image/vaiqu.png"/>
+                                <div id="property">
+                                        <div id="identify">
+                                                <img src="image/vwei.png"/>
+                                        </div>
+                                        <div id="hp">
+                                                <ul>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                        <li><img src="image/vtili.png"/></li>
+                                                </ul>
+
+                                        </div>
+                                        <div id="cards">
+                                                <p>4</p>
+                                        </div>
+                                </div>
+                        </div>
+			<div id="bottom">
+				<div id="weapons">
+				</div>
+				<div id="mycard">
+					<div class="pai">
+						<p>2</p>
+						<div class="huase_k">
+							<img  class="huase" src="image/vhongtao.png"/>
+						</div>
+					</div>
+					<div class="pai one">
+                                                <p>2</p>
+                                                <div class="huase_k">
+                                                        <img  class="huase" src="image/vhongtao.png"/>
+                                                </div>
+                                        </div>
+					<div class="pai two">
+                                                <p>2</p>
+                                                <div class="huase_k">
+                                                        <img  class="huase" src="image/vhongtao.png"/>
+                                                </div>
+                                        </div>
+					<div class="pai third">
+                                                <p>2</p>
+                                                <div class="huase_k">
+                                                        <img  class="huase" src="image/vhongtao.png"/>
+                                                </div>
+                                        </div>
+
+				</div>
+				<div id="myhero">
+					<img id="master"  src="image/vp1qu.png"/>
+					<div class="jineng">
+						<p>青囊</p>
+					</div>
+					<div class="jineng er">
+						<p>急救</p>
+					</div>
+					<div id="property">	
+					 	<div id="identify">
+                                               	 	<img src="image/vwei.png"/>
+                                        	</div>
+                                        	<div id="hp">
+                                               	 	<ul>
+                                                        	<li><img src="image/vtili.png"/></li>
+                                                        	<li><img src="image/vtili.png"/></li>
+                                                        	<li><img src="image/vtili.png"/></li>
+                                                	</ul>
+
+                                        	</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
