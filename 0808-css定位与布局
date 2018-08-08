@@ -44,7 +44,24 @@ css属性:
 	    2、牌必须div
 
 	网页常见三种图片格式: jpg png gif
-	
+	第一 种隐藏元素的方法:vibility:hidden;隐藏，不可见同时占位
+		visibility:visible显示
+	第二种隐藏元素的方法:display:none；元素不可见,同时不占位
+			    display:block;元素可见
+			     把行内元素变成块状元素	
+	如果布局前面有很多div都float过，再产生的div有可能会有浮动性，造成布局混乱，我们要进行清除浮动
+	清除浮动用clear:both;
+	设置了width,height以后，表示盒子内容是width,height,盒子高度宽度也是width,height
+	但设置了边框，内边距，外边距，都增大了盒子的大小，width,height单指内容的大小
+	元素居中:margin:0 auto;
+	练习内容：
+	1、面向对象的思想
+	2、隐藏元素的方法
+	3、清除浮动 
+	4、如何把元素居中
+	5、布局思路
+
+
 
 
 
